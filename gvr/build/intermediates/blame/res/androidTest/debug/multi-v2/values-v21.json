@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Android\\HaniumVrA (2)\\gvr\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v21\\values-v21.xml",
+            "map": [
+                {
+                    "source": "D:\\Android\\HaniumVrA (2)\\gvr\\build\\intermediates\\bundles\\debug\\res\\values-v21\\values-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "3",
+                        "endColumns": "8",
+                        "endOffsets": "145"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Android\\HaniumVrA (2)\\gvr\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-v21\\values-v21.xml",
+            "map": [
+                {
+                    "source": "D:\\Android\\HaniumVrA (2)\\gvr\\build\\intermediates\\bundles\\debug\\res\\values-v21\\values-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "3",
+                        "endColumns": "8",
+                        "endOffsets": "145"
+                    }
+                }
+            ]
+        }
+    ]
+}

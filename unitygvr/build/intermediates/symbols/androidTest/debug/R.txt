@@ -1,0 +1,2 @@
+int drawable vr_icon_back 0x7f020000
+int drawable vr_icon_front 0x7f020001

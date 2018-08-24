@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F2F2">
+
+    <com.example.haniumvra.view.TopbarView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#F2F2F2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="V R P H A B E T"
+        android:textColor="@color/Color_vrpha_green"
+        android:textSize="12dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#F2F2F2"/>
+
+    <Button
+        android:id="@+id/start_btn_unity"
+        android:layout_width="310dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/Color_vrpha_green"
+        android:backgroundTintMode="src_in"
+        android:text="VR START"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        android:onClick="onClick"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/start_my_voca"
+            android:layout_width="155dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/Color_vrpha_green5"
+            android:backgroundTintMode="src_in"
+            android:text="MY VOCA"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/start_rank"
+            android:layout_width="155dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/Color_vrpha_green6"
+            android:backgroundTintMode="src_in"
+            android:text="RANK"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/start_logout"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/Color_vrpha_green2"
+        android:backgroundTintMode="src_in"
+        android:text="LOGOUT"
+        android:textColor="@color/Color_vrpha_green"
+        android:textStyle="bold"
+        android:onClick="onClick"/>
+
+
+</LinearLayout>

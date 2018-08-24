@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.example.haniumvra"
+        minSdkVersion 21
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions{ javaMaxHeapSize = "4g" }
+
+    lintOptions {
+        checkReleaseBuilds false
+    }
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi-v7a'
+            universalApk true
+        }
+    }
+
+}
+
+dependencies {
+    compile 'com.android.support:multidex:1.0.0'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':gvr')
+    compile project(':unitygvr')
+    compile files('libs/unity-classes.jar')
+    compile files('libs/android-core.jar')
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.google.android.gms:play-services-auth:10.0.1'
+    compile 'com.google.code.gson:gson:2.3.1'
+
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.0.0-alpha1'
+    implementation 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    implementation 'com.android.support:cardview-v7:26.0.0-alpha1'
+
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0'
+    provided 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    implementation files('libs/libprotobuf-java-nano.jar')
+
+}

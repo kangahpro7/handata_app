@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="V R P H A B E T 회 원 가 입"
+            android:textColor="@color/Color_vrpha_green"
+            android:textSize="12dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp">
+
+                    <EditText
+                        android:id="@+id/user_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_edit_custom"
+                        android:hint="아이디를 입력해주세요"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:layout_marginRight="5dp"
+                        android:textColorHint="@color/Color_vrpha_green3"
+                        android:textSize="14sp"
+                        android:textColor="@color/Color_black"/>
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_check_id"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_edit_custom"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:text="중복확인"
+                    android:textSize="12sp"
+                    android:textColor="@color/Color_vrpha_green3"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/user_pw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_edit_custom"
+                    android:hint="비밀번호 영소문자+숫자 조합 8~16자 이내"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColorHint="@color/Color_vrpha_green3"
+                    android:textSize="14sp"
+                    android:textColor="@color/Color_black"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/user_pw2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_edit_custom"
+                    android:hint="비밀번호 영소문자+숫자 조합 8~16자 이내"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColorHint="@color/Color_vrpha_green3"
+                    android:textSize="14sp"
+                    android:textColor="@color/Color_black"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_edit_custom"
+                    android:hint="이름을 입력해주세요"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColorHint="@color/Color_vrpha_green3"
+                    android:textSize="14sp"
+                    android:textColor="@color/Color_black"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+                <EditText
+                    android:id="@+id/user_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_edit_custom"
+                    android:hint="이메일을 입력해주세요"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColorHint="@color/Color_vrpha_green3"
+                    android:textSize="14sp"
+                    android:textColor="@color/Color_black"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_btn_custom"
+                android:text="시작하기"
+                android:textColor="@color/Color_white"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
